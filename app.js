@@ -5,9 +5,10 @@ var txt_input = document.querySelector("#text-input")
 var txt_output = document.querySelector("#output")
 
 var serverUrl = "https://api.funtranslations.com/translate/minion.json"
+var serverurlGerman ="https://api.funtranslations.com/translate/german-accent.json"
 
 function Translator(text){
-    return serverUrl + "?"+"text="+text
+    return serverurlGerman + "?"+"text="+text
 }
 function errorHandler(error){
     console.log("error occured",error)
